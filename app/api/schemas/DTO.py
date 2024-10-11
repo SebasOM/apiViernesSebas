@@ -21,61 +21,61 @@ class UsuarioDTORespuesta(BaseModel):
         orm_mode=True
 
 class GastoDTOPeticion(BaseModel):
-    monto=int
-    fecha=date
-    descripcion=str
-    nombre=str
+    monto:int
+    fecha:date
+    descripcion:str
+    nombre:str
     class Config:
         orm_mode=True
 
 class GastoDTORespuesta(BaseModel):
-    id=int
-    monto=int
-    fecha=date
-    descripcion=str
-    nombre=str
+    id:int
+    monto:int
+    fecha:date
+    descripcion:str
+    nombre:str
     class Config:
         orm_mode=True
 
 class IngresoDTOPeticion(BaseModel):
-    monto=int
-    fecha=date
-    descripcion=str
-    nombre=str
+    monto:int
+    fecha:date
+    descripcion:str
+    nombre:str
     class Config:
         orm_mode=True
 
 class IngresoDTORespuesta(BaseModel):
-    id=int
-    monto=int
-    fecha=date
-    descripcion=str
-    nombre=str
+    id:int
+    monto:int
+    fecha:date
+    descripcion:str
+    nombre:str
     class Config:
         orm_mode=True
 
 class CategoriaDTOPeticion(BaseModel):
-    nombreCategoria=str
-    descripcion=int
+    nombreCategoria:str
+    descripcion:int
     class Config:
         orm_mode=True
 
 class CategoriaDTORespuesta(BaseModel):
-    id=int
-    nombreCategoria=str
-    descripcion=int
+    id:int
+    nombreCategoria:str
+    descripcion:int
     class Config:
         orm_mode=True
 
 class MetodoPagoDTOPeticion(BaseModel):
-    nombreMetodo=str
-    descripcion=str
+    nombreMetodo:str
+    descripcion:str
     class Config:
         orm_mode=True
 
 class MetodoPagoDTORespuesta(BaseModel):
-    id=int
-    nombreMetodo=str
-    descripcion=str
+    id:int
+    nombreMetodo:str
+    descripcion:str
     class Config:
         orm_mode=True

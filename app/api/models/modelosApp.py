@@ -19,7 +19,7 @@ class Usuario(Base):
     ciudad=Column(String(50))
 
 class Gasto(Base):
-    _tablename_='Gastos'
+    __tablename__='Gastos'
     id=Column(Integer, primary_key=True, autoincrement=True)
     monto=Column(Integer)
     fecha=Column(Date)
@@ -28,7 +28,7 @@ class Gasto(Base):
 
 #INGRESO
 class Ingreso(Base):
-    _tablename_='Ingreso'
+    __tablename__='Ingreso'
     id=Column(Integer, primary_key=True, autoincrement=True)
     monto=Column(Integer)
     fecha=Column(Date)
@@ -37,26 +37,26 @@ class Ingreso(Base):
 
 #CATEGORIA
 class Categoria(Base):
-    _tablename_='Categoria'
+    __tablename__='Categoria'
     id=Column(Integer, primary_key=True, autoincrement=True)
     nombreCategoria=Column(String(50))
     descripcion=Column(String(100))
 
 #MOVIMIENTO
-class Movimiento(Base):
+'''class Movimiento(Base):
     id=Column(Integer, primary_key=True, autoincrement=True)
     Cantidad=Column(Integer)
     fecha=Column(Date)
-    descripcion=Column(String(100))
+    descripcion=Column(String(100))'''
     
 #METODO DE PAGO
 class MetodoPago(Base):
-    _tablename_='MetodoPago'
+    __tablename__='MetodoPago'
     id=Column(Integer, primary_key=True, autoincrement=True)
     nombreMetodo=Column(String(50))
     descripcion=Column(String(100))
 
 #FACTURA
 class Factura(Base):
-    _tablename_='Factura'
+    __tablename__='Factura'
     id=Column(Integer, primary_key=True, autoincrement=True)
